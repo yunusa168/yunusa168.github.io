@@ -1,0 +1,53 @@
+/* Design system — variables globales */
+:root {
+  /* Couleurs */
+  --color-bg-dark: #0B1220;
+  --color-bg-dark-alt: #101A2C;
+  --color-bg-light: #F7F9FC;
+  --color-bg-light-alt: #FFFFFF;
+  --color-accent: #3DD6C5;
+  --color-accent-strong: #0A7068;
+  --color-text-dark: #1B2430;
+  --color-text-muted: #4A5768;
+  --color-text-light: #E8EEF7;
+  --color-text-light-muted: #A9B8CC;
+  --color-border-light: #DCE3EC;
+  --color-border-dark: #24334A;
+
+  /* Niveaux de compétences (contrastes ≥ 4,5:1) */
+  --color-level-pratique-fg: #0A7068;
+  --color-level-pratique-bg: #E6F2F0;
+  --color-level-apprentissage-fg: #8A5A00;
+  --color-level-apprentissage-bg: #FFF4E5;
+  --color-level-notions-fg: #3F5268;
+  --color-level-notions-bg: #EEF2F7;
+
+  /* Typographie */
+  --font-sans: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: clamp(1.9rem, 4vw, 3rem);
+  --fs-3xl: clamp(2.4rem, 6vw, 4.1rem);
+
+  /* Espacements */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 5rem;
+
+  /* Formes et effets */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --shadow-sm: 0 2px 10px rgba(11, 18, 32, 0.06);
+  --shadow-md: 0 16px 40px rgba(11, 18, 32, 0.12);
+  --container: 1120px;
+  --header-height: 72px;
+  --duration: 200ms;
+  --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+}

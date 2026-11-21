@@ -1,0 +1,19 @@
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs et IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dépendances / caches
+node_modules/
+__pycache__/
+*.py[cod]
+
+# Fichiers sensibles et journaux
+.env
+*.log
