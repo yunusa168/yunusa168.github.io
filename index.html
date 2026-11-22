@@ -4,24 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YUNUSA Rassouloul Haki Adegoke — Développeur Full Stack</title>
-  <meta name="description" content="Portfolio de YUNUSA Rassouloul Haki Adegoke, étudiant en Master 2 MIAGE à l'Université Nangui Abrogoua. Développement Full Stack, applications, data et intelligence artificielle.">
+  <meta name="description" content="Portfolio de YUNUSA Rassouloul Haki Adegoke, étudiant en Master 2 MIAGE à l'Université Nangui Abrogoua. Développement Full Stack, applications, data et intelligence artificielle." data-i18n-content="meta.description">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="YUNUSA Rassouloul Haki Adegoke — Développeur Full Stack">
-  <meta property="og:description" content="Portfolio professionnel : parcours MIAGE, compétences, projets informatiques et opportunités.">
+  <meta property="og:title" content="YUNUSA Rassouloul Haki Adegoke — Développeur Full Stack" data-i18n-content="meta.ogTitle">
+  <meta property="og:description" content="Portfolio professionnel : parcours MIAGE, compétences, projets informatiques et opportunités." data-i18n-content="meta.ogDescription">
   <meta name="theme-color" content="#0B1220">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
+  <script src="assets/js/i18n.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <a class="skip-link" href="#contenu" data-i18n="skip.link">Aller au contenu principal</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#accueil" aria-label="YR — YUNUSA Rassouloul Haki Adegoke, retour à l'accueil" data-i18n="brand">YR</a>
+      <a class="brand" href="#accueil" aria-label="YR — YUNUSA Rassouloul Haki Adegoke, retour à l'accueil" data-i18n="brand" data-i18n-aria-label="brand.aria">YR</a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu de navigation" data-label-open="Ouvrir le menu de navigation" data-label-close="Fermer le menu de navigation">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
@@ -29,7 +30,7 @@
         <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
 
-      <nav id="site-nav" class="site-nav" aria-label="Navigation principale">
+      <nav id="site-nav" class="site-nav" aria-label="Navigation principale" data-i18n-aria-label="nav.aria">
         <a href="#accueil" data-i18n="nav.accueil">Accueil</a>
         <a href="#apropos" data-i18n="nav.apropos">À propos</a>
         <a href="#formation" data-i18n="nav.formation">Formation</a>
@@ -39,6 +40,12 @@
         <a href="#commercial" data-i18n="nav.commercial">Commercial</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
         <a href="#cv" data-i18n="nav.cv">CV</a>
+
+        <div class="lang-switch" role="group" aria-label="Choisir la langue" data-i18n-aria-label="lang.group">
+          <button type="button" class="lang-btn" data-lang="fr" lang="fr" aria-pressed="true">Français</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false">English</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -51,14 +58,14 @@
           <p class="eyebrow" data-i18n="hero.eyebrow">Étudiant en Master 2 MIAGE — Université Nangui Abrogoua, Abidjan, Côte d'Ivoire</p>
           <h1 id="titre-accueil" data-i18n="hero.name">YUNUSA Rassouloul Haki Adegoke</h1>
           <p class="hero-role" data-i18n="hero.role">Développement Full Stack · Applications · Data · Intelligence artificielle</p>
-          <p class="hero-availability" data-i18n="hero.availability">Disponible pour un stage, un emploi ou des missions freelance.</p>
+          <p class="hero-availability" data-i18n="hero.availability">Disponibilité à discuter.</p>
           <div class="hero-actions">
             <a class="btn btn--primary" href="#projets" data-i18n="hero.ctaProjects">Voir mes projets</a>
-            <a class="btn btn--ghost" href="#cv" data-i18n="hero.ctaCv">Télécharger mon CV</a>
+            <a class="btn btn--ghost" href="#cv" data-i18n="hero.ctaCv">Voir mes CV</a>
           </div>
         </div>
         <figure class="portrait">
-          <img src="assets/img/profile.jpg" alt="Photographie professionnelle de YUNUSA Rassouloul Haki Adegoke" width="1828" height="2560">
+          <img src="assets/img/profile.jpg" alt="Photographie professionnelle de YUNUSA Rassouloul Haki Adegoke" width="1828" height="2560" data-i18n-alt="hero.portraitAlt">
           <figcaption class="visually-hidden" data-i18n="hero.portrait">Portrait professionnel</figcaption>
         </figure>
       </div>
@@ -71,7 +78,7 @@
           <span class="section-index" aria-hidden="true">01</span>
           <h2 id="titre-apropos" data-i18n="about.title">À propos</h2>
         </header>
-        <p class="lead" data-i18n="about.text">Étudiant en Master 2 MIAGE à l'Université Nangui Abrogoua, je développe des applications web et de bureau en accordant de l'importance à la clarté du code, à la fiabilité des données et à l'expérience utilisateur. Mon parcours couvre le développement Full Stack, la gestion de données et l'intelligence artificielle appliquée. Je suis disponible pour un stage, un emploi ou des missions freelance.</p>
+        <p class="lead" data-i18n="about.text">Étudiant en Master 2 MIAGE à l'Université Nangui Abrogoua, je développe des applications web et de bureau en accordant de l'importance à la clarté du code, à la fiabilité des données et à l'expérience utilisateur. Mon parcours couvre le développement Full Stack, la gestion de données et l'intelligence artificielle appliquée. Disponibilité à discuter.</p>
       </div>
     </section>
 
@@ -95,7 +102,16 @@
           <article class="timeline-item reveal">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
-              <p class="timeline-meta"><span>2025</span><span class="status-badge" data-i18n="education.obtained">Obtenue</span></p>
+              <p class="timeline-meta"><span>2025-2026</span></p>
+              <h3 data-i18n="education.m1">Master 1 MIAGE</h3>
+              <p class="timeline-sub" data-i18n="education.m1Full">Méthodes Informatiques Appliquées à la Gestion des Entreprises</p>
+              <p class="timeline-place" data-i18n="education.placeUNA">Université Nangui Abrogoua</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-meta"><span>2025</span><span class="status-badge" data-i18n="education.obtained.f">Obtenue</span></p>
               <h3 data-i18n="education.licence">Licence en informatique</h3>
               <p class="timeline-place" data-i18n="education.placeUNA">Université Nangui Abrogoua</p>
             </div>
@@ -103,11 +119,30 @@
           <article class="timeline-item reveal">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
-              <p class="timeline-meta"><span>2019</span><span class="status-badge" data-i18n="education.obtained">Obtenu</span></p>
-              <h3 data-i18n="education.bac">Baccalauréat</h3>
-              <p class="timeline-place" data-i18n="education.placeLycee">Lycée Moderne Béavi de Bouaké</p>
+              <p class="timeline-meta"><span>2019</span><span class="status-badge" data-i18n="education.obtained.m">Obtenu</span></p>
+              <h3 data-i18n="education.bac">Baccalauréat série D</h3>
+              <p class="timeline-place" data-i18n="education.placeLycee">Lycée Moderne Belle-Ville de Bouaké</p>
             </div>
           </article>
+        </div>
+
+        <div class="training-block reveal">
+          <h3 class="training-title" data-i18n="training.title">Formations complémentaires</h3>
+          <p class="training-intro" data-i18n="training.intro">Deux formations courtes suivies au sein d'Orange Digital Center — FabLab Solidaire.</p>
+          <div class="training-grid">
+            <article class="training-card">
+              <span class="badge badge--status" data-i18n="training.badge">Formation suivie</span>
+              <h4 data-i18n="training.t1">Python &amp; Raspberry Pi : Les Fondamentaux</h4>
+              <p class="training-date" data-i18n="training.t1.date">9 au 11 novembre 2026</p>
+              <p class="training-desc" data-i18n="training.t1.text">Introduction à Raspberry Pi, aux broches GPIO et à la programmation de LED ; renforcement des bases de Python.</p>
+            </article>
+            <article class="training-card">
+              <span class="badge badge--status" data-i18n="training.badge">Formation suivie</span>
+              <h4 data-i18n="training.t2">OpenLab – Fabrication numérique</h4>
+              <p class="training-date" data-i18n="training.t2.date">novembre 2026</p>
+              <p class="training-desc" data-i18n="training.t2.text">Initiation à Inkscape pour le design vectoriel et à RDWorks pour la préparation de la découpe et de la gravure laser.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -119,10 +154,12 @@
           <span class="section-index" aria-hidden="true">03</span>
           <h2 id="titre-competences" data-i18n="skills.title">Compétences</h2>
         </header>
-        <ul class="skills-legend" aria-label="Légende des niveaux">
+        <ul class="skills-legend" aria-label="Légende des niveaux" data-i18n-aria-label="skills.legendAria">
           <li><span class="legend-swatch level--pratique" aria-hidden="true"></span><strong data-i18n="skills.level.pratique">Pratique en projet</strong> <span data-i18n="skills.legend.pratique">— technologie utilisée dans un projet académique, avec une première capacité à en expliquer la mise en œuvre.</span></li>
           <li><span class="legend-swatch level--apprentissage" aria-hidden="true"></span><strong data-i18n="skills.level.apprentissage">En apprentissage</strong> <span data-i18n="skills.legend.apprentissage">— montée en compétence en cours, sans prétendre à la maîtrise.</span></li>
           <li><span class="legend-swatch level--notions" aria-hidden="true"></span><strong data-i18n="skills.level.notions">Notions</strong> <span data-i18n="skills.legend.notions">— première découverte, en cours d'exploration.</span></li>
+          <li><span class="legend-swatch level--initiation" aria-hidden="true"></span><strong data-i18n="skills.level.initiation">Initiation</strong> <span data-i18n="skills.legend.initiation">— Première découverte d'un outil ou d'une technologie et de ses principales fonctionnalités.</span></li>
+          <li><span class="legend-swatch level--pratique-simple" aria-hidden="true"></span><strong data-i18n="skills.level.pratiqueSimple">Pratique</strong> <span data-i18n="skills.legend.pratiqueSimple">— Capacité à utiliser concrètement un outil ou une technologie dans des tâches ou exercices.</span></li>
         </ul>
         <div class="skills-grid">
           <article class="skill-group reveal">
@@ -131,6 +168,7 @@
               <li class="skill-item"><span class="skill-name">HTML</span><span class="level level--pratique" data-i18n="skills.level.pratique">Pratique en projet</span></li>
               <li class="skill-item"><span class="skill-name">CSS</span><span class="level level--pratique" data-i18n="skills.level.pratique">Pratique en projet</span></li>
               <li class="skill-item"><span class="skill-name">JavaScript</span><span class="level level--pratique" data-i18n="skills.level.pratique">Pratique en projet</span></li>
+              <li class="skill-item"><span class="skill-name">Bootstrap</span><span class="level level--pratique-simple" data-i18n="skills.level.pratiqueSimple">Pratique</span></li>
             </ul>
           </article>
           <article class="skill-group reveal">
@@ -138,6 +176,8 @@
             <ul class="skill-list">
               <li class="skill-item"><span class="skill-name">Python</span><span class="level level--pratique" data-i18n="skills.level.pratique">Pratique en projet</span></li>
               <li class="skill-item"><span class="skill-name">Django</span><span class="level level--pratique" data-i18n="skills.level.pratique">Pratique en projet</span></li>
+              <li class="skill-item"><span class="skill-name">Java</span><span class="level level--initiation" data-i18n="skills.level.initiation">Initiation</span></li>
+              <li class="skill-item"><span class="skill-name">SQL</span><span class="level level--pratique-simple" data-i18n="skills.level.pratiqueSimple">Pratique</span></li>
             </ul>
           </article>
           <article class="skill-group reveal">
@@ -164,6 +204,16 @@
             <ul class="skill-list">
               <li class="skill-item"><span class="skill-name">Git / GitHub</span><span class="level level--apprentissage" data-i18n="skills.level.apprentissage">En apprentissage</span></li>
               <li class="skill-item"><span class="skill-name">OpenCode</span><span class="level level--notions" data-i18n="skills.level.notions">Notions</span></li>
+              <li class="skill-item"><span class="skill-name">VS Code</span><span class="level level--pratique-simple" data-i18n="skills.level.pratiqueSimple">Pratique</span></li>
+              <li class="skill-item"><span class="skill-name">Power BI</span><span class="level level--initiation" data-i18n="skills.level.initiation">Initiation</span></li>
+            </ul>
+          </article>
+          <article class="skill-group reveal">
+            <h3 data-i18n="skills.group.fabrication">Fabrication numérique</h3>
+            <ul class="skill-list">
+              <li class="skill-item"><span class="skill-name">Raspberry Pi / GPIO</span><span class="level level--initiation" data-i18n="skills.level.initiation">Initiation</span></li>
+              <li class="skill-item"><span class="skill-name">Inkscape</span><span class="level level--initiation" data-i18n="skills.level.initiation">Initiation</span></li>
+              <li class="skill-item"><span class="skill-name">RDWorks</span><span class="level level--initiation" data-i18n="skills.level.initiation">Initiation</span></li>
             </ul>
           </article>
         </div>
@@ -182,8 +232,8 @@
             <div class="card-body">
               <span class="badge badge--status" data-i18n="projects.aioaBadge">Dépôt public</span>
               <h3 data-i18n="projects.aioaTitle">AIOA</h3>
-              <p data-i18n="projects.aioaText">Application intelligente d'orientation académique. Projet académique développé avec Django. Fonctionnalités vérifiées : profil BAC guidé en 6 étapes, saisie des notes et calcul pondéré, recommandations de filières et de concours avec scores détaillés, fiches PDF téléchargeables. L'intégration de l'API Mistral est présente dans le code mais son analyse d'images n'a pas pu être vérifiée faute de clé API. Dépôt source public ; démo en ligne non confirmée.</p>
-              <a class="project-link" href="https://github.com/yunusa168/aioa" target="_blank" rel="noopener noreferrer" data-i18n="projects.aioaLink">Voir le dépôt GitHub <span aria-hidden="true">↗</span></a>
+              <p data-i18n="projects.aioaText">Application intelligente d'orientation académique. Projet académique développé avec Python, Django, MySQL, HTML/CSS, Bootstrap et JavaScript. Fonctionnalités vérifiées : profil BAC guidé en 6 étapes, saisie des notes et calcul pondéré, recommandations de filières et de concours avec scores détaillés, fiches PDF téléchargeables. L'intégration de l'API Mistral est présente dans le code mais son analyse d'images n'a pas pu être vérifiée faute de clé API. Dépôt source public ; démo en ligne non confirmée.</p>
+              <a class="project-link" href="https://github.com/yunusa168/aioa" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.aioaLink">Voir le dépôt GitHub</span> <span aria-hidden="true">↗</span></a>
             </div>
           </article>
           <article class="project-card reveal">
@@ -220,6 +270,7 @@
         </header>
         <article class="experience-item reveal">
           <h3 data-i18n="experience.title1">Stage en maintenance informatique</h3>
+          <p class="experience-meta" data-i18n="experience.meta1">Stage de qualification — Riviera 2, Abidjan | Février – juin 2025</p>
           <ul class="task-list">
             <li data-i18n="experience.t1">Installation du système d'exploitation Windows.</li>
             <li data-i18n="experience.t2">Diagnostic informatique.</li>
@@ -275,6 +326,10 @@
             <span class="contact-label" data-i18n="contact.phoneLabel">Téléphone</span>
             <span class="contact-value">+225 05 84 88 14 30</span>
           </a>
+          <div class="contact-card contact-card--static reveal">
+            <span class="contact-label" data-i18n="contact.locationLabel">Localisation</span>
+            <span class="contact-value" data-i18n="contact.locationValue">Abidjan, Côte d'Ivoire</span>
+          </div>
           <a class="contact-card reveal" href="https://linkedin.com/in/rassoul-yunusa-747032380" target="_blank" rel="noopener noreferrer">
             <span class="contact-label">LinkedIn</span>
             <span class="contact-value">rassoul-yunusa-747032380</span>
@@ -284,7 +339,7 @@
             <span class="contact-value">yunusa168</span>
           </a>
         </div>
-        <p class="contact-note" data-i18n="contact.availability">Disponible pour un stage, un emploi ou des missions freelance.</p>
+        <p class="contact-note" data-i18n="contact.availability">Disponibilité à discuter.</p>
       </div>
     </section>
 
@@ -293,17 +348,20 @@
       <div class="container cv-inner">
         <header class="section-head section-head--center">
           <span class="section-index" aria-hidden="true">08</span>
-          <h2 id="titre-cv" data-i18n="cv.title">Télécharger mon CV</h2>
+          <h2 id="titre-cv" data-i18n="cv.title">Télécharger les CV</h2>
         </header>
-        <p class="cv-links-note" data-i18n="cv.note">Mon parcours et mes coordonnées, au format PDF.</p>
-        <a class="btn btn--primary" href="assets/files/CV-Yunusa-Rassoul.pdf" download data-i18n="cv.button">Télécharger mon CV</a>
+        <p class="cv-links-note" data-i18n="cv.note">Deux versions PDF : française et anglaise.</p>
+        <div class="cv-actions">
+          <a class="btn btn--primary" href="assets/files/CV-Yunusa-Rassoul.pdf" download="CV-Yunusa-Rassoul.pdf" data-i18n="cv.buttonFr">Télécharger le CV en français</a>
+          <a class="btn btn--ghost" href="assets/files/Resume-Yunusa-Rassoul-EN.pdf" download="Resume-Yunusa-Rassoul-EN.pdf" data-i18n="cv.buttonEn">Télécharger le CV en anglais</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <a class="brand brand--footer" href="#accueil" data-i18n="brand">YR</a>
+      <a class="brand brand--footer" href="#accueil" aria-label="YR — YUNUSA Rassouloul Haki Adegoke, retour à l'accueil" data-i18n="brand" data-i18n-aria-label="brand.aria">YR</a>
       <p>© <span id="year">2026</span> YUNUSA Rassouloul Haki Adegoke</p>
       <a class="footer-top" href="#accueil" data-i18n="footer.top">Retour en haut ↑</a>
     </div>

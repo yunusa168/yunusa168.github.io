@@ -6,6 +6,18 @@
   var nav = document.getElementById("site-nav");
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  if (window.PortfolioI18n) {
+    window.PortfolioI18n.apply(window.PortfolioI18n.detect());
+  }
+
+  document.querySelectorAll("[data-lang]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      if (!window.PortfolioI18n) return;
+      window.PortfolioI18n.apply(button.getAttribute("data-lang"));
+      closeMenu();
+    });
+  });
+
   function closeMenu() {
     if (!toggle || !nav) return;
     toggle.setAttribute("aria-expanded", "false");
@@ -42,7 +54,7 @@
         if (!target) return;
         event.preventDefault();
         target.scrollIntoView({ behavior: "smooth", block: "start" });
-        history.replaceState(null, "", "#" + id);
+        history.replaceState(null, "", window.location.search + "#" + id);
       });
     });
   }

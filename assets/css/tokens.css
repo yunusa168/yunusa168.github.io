@@ -21,6 +21,10 @@
   --color-level-apprentissage-bg: #FFF4E5;
   --color-level-notions-fg: #3F5268;
   --color-level-notions-bg: #EEF2F7;
+  --color-level-initiation-fg: #5D3A8A;
+  --color-level-initiation-bg: #F1ECF9;
+  --color-level-pratique-simple-fg: #1A5D8A;
+  --color-level-pratique-simple-bg: #E9F2FA;
 
   /* Typographie */
   --font-sans: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

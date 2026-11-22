@@ -96,6 +96,55 @@
   color: var(--color-level-pratique-fg);
 }
 
+/* Formation — formations complémentaires */
+.training-block {
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.training-title {
+  font-size: var(--fs-xl);
+}
+
+.training-intro {
+  margin-top: var(--space-1);
+  color: var(--color-text-muted);
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.training-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: var(--space-2);
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+}
+
+.training-card h4 {
+  font-size: var(--fs-lg);
+}
+
+.training-date {
+  color: var(--color-accent-strong);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+}
+
+.training-desc {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
 /* Compétences — légende et niveaux */
 .skills-legend {
   display: grid;
@@ -154,9 +203,21 @@
   color: var(--color-level-notions-fg);
 }
 
+.level--initiation {
+  background: var(--color-level-initiation-bg);
+  color: var(--color-level-initiation-fg);
+}
+
+.level--pratique-simple {
+  background: var(--color-level-pratique-simple-bg);
+  color: var(--color-level-pratique-simple-fg);
+}
+
 .legend-swatch.level--pratique { background: var(--color-level-pratique-fg); }
 .legend-swatch.level--apprentissage { background: var(--color-level-apprentissage-fg); }
 .legend-swatch.level--notions { background: var(--color-level-notions-fg); }
+.legend-swatch.level--initiation { background: var(--color-level-initiation-fg); }
+.legend-swatch.level--pratique-simple { background: var(--color-level-pratique-simple-fg); }
 
 .skill-group {
   padding: var(--space-2);
@@ -259,6 +320,13 @@
   font-size: var(--fs-xl);
 }
 
+.experience-meta {
+  margin-top: 0.35rem;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+}
+
 .soft-skills {
   margin-top: var(--space-3);
   padding-top: var(--space-2);
@@ -303,6 +371,11 @@
 .contact-card:hover {
   border-color: var(--color-accent-strong);
   transform: translateY(-2px);
+}
+
+.contact-card--static:hover {
+  border-color: var(--color-border-light);
+  transform: none;
 }
 
 .contact-label {
